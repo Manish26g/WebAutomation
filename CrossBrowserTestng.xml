@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lambda_Ecommerce_Test">
+    <!--<test verbose="2" preserve-order="true" name="D:/advanceFramework/Seleniumframework">-->
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.lambdaEcommerce.Test.LoginUsingCrossbrowser.CrossBrowserLoginTest"/>
+        </classes>
+    </test>
+
+    <test name="FireFoxTest">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="com.lambdaEcommerce.Test.LoginUsingCrossbrowser.CrossBrowserLoginTest"/>
+        </classes>
+    </test>
+</suite>
